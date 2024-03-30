@@ -35,17 +35,28 @@ body {
 	font-size: 5rem;
 }
 @media (max-width: 767px) {
-	.hero-title {
-		text-align: center;
-	}
-	.hero-container > .row > .hero-title > h3 {
-		font-size: 1.5rem;
-		letter-spacing: 8px;
-	}
-	.hero-container > .row > .hero-title > h1 {
-		font-size: 3rem;
-		letter-spacing: 20px;
-	}
+  .hero-title {
+    text-align: center;
+  }
+  .hero-container > .row > .hero-title > h3 {
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+  }
+  .hero-container > .row > .hero-title > h1 {
+    font-size: 3rem;
+    letter-spacing: 20px;
+  }
+  .about-us > .row > .about-us-content {
+    text-align: center;
+  }
+  .about-us-container > .row > .about-us-content > .content-1 {
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+  }
+  .about-us-container > .row > .about-us-content > .content-2 {
+    font-size: 3rem;
+    letter-spacing: 20px;
+  }
 }
 /* ============================================================================= */
 
