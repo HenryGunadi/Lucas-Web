@@ -1,0 +1,553 @@
+* {
+	font-family: 'Cormorant Garamond', serif;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+/* NAVBAR */
+/* Add this style for the transition effect */ /* style.css */
+
+/* TITTLE SECTION */
+/* hero section */
+.hero-container {
+	height: 100vh;
+	background-image: url('images/landingPage.JPG');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+.hero-title {
+	text-align: left;
+}
+.hero-container > .row > .hero-title > h3 {
+	letter-spacing: 12px;
+	font-weight: lighter;
+	font-size: 12px;
+}
+.hero-container > .row > .hero-title > h1 {
+	letter-spacing: 42px;
+	font-weight: 100;
+	font-size: 5rem;
+}
+@media (max-width: 767px) {
+	.hero-title {
+		text-align: center;
+	}
+	.hero-container > .row > .hero-title > h3 {
+		font-size: 1.5rem;
+		letter-spacing: 8px;
+	}
+	.hero-container > .row > .hero-title > h1 {
+		font-size: 3rem;
+		letter-spacing: 20px;
+	}
+}
+/* ============================================================================= */
+
+/* about us start */
+
+.about-us-container {
+	height: 100vh;
+	background-image: url('images/about.JPG');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+.about-us-content {
+	padding: 12rem 2rem 0 2rem;
+	height: 100%;
+}
+.about-us-content > .content-1 {
+	letter-spacing: 5px;
+}
+.about-us-content > .content-2 {
+	font-size: 4rem;
+	font-weight: 700;
+	letter-spacing: 4px;
+}
+.about-us-content > button {
+	width: 13.5rem;
+	border-radius: 12px;
+	letter-spacing: 4px;
+}
+.about-us-content > .about-us-footer {
+	margin-bottom: 0;
+	text-align: left;
+	padding-top: 25px;
+	margin-top: 32px;
+}
+
+/* ============================================================================= */
+
+/* CSS untuk warna normal */
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+	color: #ffffff; /* Warna teks pada mode normal */
+	font-size: 24px;
+}
+
+.col-md img {
+	max-height: 80%; /* Gambar tidak melebihi lebar kontennya */
+	width: auto; /* Menjaga aspek rasio gambar */
+	display: block; /* Menghilangkan margin bawah yang mungkin muncul pada elemen img */
+	margin: 0 auto; /* Memberikan margin otomatis di sekitar gambar */
+}
+
+/* NAVIGASI BAR */
+
+#mainNavigation a {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.dropdown-menu {
+	background: #00000000;
+}
+a.dropdown-toggle {
+	color: #dfdfdf !important;
+}
+a.dropdown-item:hover {
+	color: #000000 !important;
+}
+.nav-item a {
+	color: #dfdfdf;
+}
+.nav-item a:hover {
+	color: #fff;
+}
+.nav-item {
+	min-width: 12vw;
+}
+#mainNavigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 123;
+	transition: 1s;
+	padding-bottom: 50px;
+
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.65) 0%,
+		rgba(0, 0, 0, 0) 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+#navbarNavDropdown.collapsing .navbar-nav,
+#navbarNavDropdown.show .navbar-nav {
+	background: #03758200;
+	padding: 12px;
+}
+
+@media (max-width: 767.98px) {
+	.offcanvas-body .navbar-nav .nav-item a {
+		color: #000 !important;
+	}
+
+	.offcanvas-body .navbar-nav .nav-item a:hover {
+		color: #000 !important;
+	}
+
+	.offcanvas-body .navbar-nav .nav-item.dropdown .nav-link {
+		color: #000 !important;
+	}
+
+	.offcanvas-body .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+		color: #000 !important;
+	}
+}
+
+/* NAVIGASI BAR */
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio .portfolio-item {
+	margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+	padding: 0;
+	margin: 0 auto 20px auto;
+	list-style: none;
+	text-align: center;
+}
+
+.portfolio #portfolio-flters li {
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 16px 10px 16px;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #444444;
+	margin-bottom: 5px;
+	transition: all 0.3s ease-in-out;
+	border-radius: 50px;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+	color: #fff;
+	background: #4e4e4e;
+}
+
+.portfolio #portfolio-flters li:last-child {
+	margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+	transition: 0.3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: rgba(34, 34, 34, 0.6);
+}
+
+.portfolio .portfolio-wrap::before {
+	content: '';
+	background: rgba(34, 34, 34, 0.6);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transition: all ease-in-out 0.3s;
+	z-index: 2;
+	opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+	transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	transition: all ease-in-out 0.3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 20px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	font-style: italic;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+	text-align: center;
+	z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+	color: #fff;
+	margin: 0 5px 0 0;
+	font-size: 28px;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+	color: #78d9cd;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+	opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover img {
+	transform: scale(1.2);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+	opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+	padding-top: 0;
+}
+
+.portfolio-details .portfolio-details-slider img {
+	width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+	margin-top: 20px;
+	position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	opacity: 1;
+	border: 1px solid #bdc1c1;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+	background-color: #909191;
+}
+
+.portfolio-details .portfolio-info {
+	padding: 30px;
+	box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+	list-style: none;
+	padding: 0;
+	font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+	margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+	padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+	font-size: 26px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+	padding: 0;
+}
+/* Section-4 */
+.section-4 {
+	position: relative;
+	width: 100vw;
+	height: 120vh;
+}
+
+.section-4::before {
+	content: '';
+	inset: 0;
+	position: absolute;
+	z-index: -1;
+	background-image: url(images/sec-4.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.section-4-container {
+	color: white;
+	position: absolute;
+	top: 55%;
+	left: 5%;
+}
+
+.pricelist {
+	letter-spacing: 1.5rem;
+	font-size: 65px;
+}
+
+.section-4-content {
+	letter-spacing: 0.12rem;
+	font-size: small;
+	opacity: 0.8;
+}
+
+.section-4-button {
+	border: solid white 1px;
+	background: transparent;
+	border-radius: 12px;
+	color: white;
+	font-size: large;
+	opacity: 0.8;
+	padding: 0.3rem 2rem 0.3rem 2rem;
+	width: 40%;
+	letter-spacing: 0.12rem;
+}
+
+.section-4-button:hover {
+	border-color: #8ac4ff;
+	color: #8ac4ff;
+	transition: 100ms ease;
+}
+
+/* Footer */
+footer {
+	background-color: rgb(243, 243, 243);
+	width: 100vw;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+	padding: 3rem 1rem 4rem 1rem;
+}
+
+.footer-content {
+	display: flex;
+	width: 55vw;
+	height: auto;
+}
+
+.links {
+	display: block;
+	outline: none;
+	text-decoration: none;
+	color: rgb(104, 104, 104);
+	margin-bottom: 10px;
+}
+
+h4 {
+	margin-bottom: 1.8rem;
+	font-weight: bold;
+	letter-spacing: 0.04rem;
+	color: rgb(17, 17, 17);
+}
+
+i {
+	color: rgb(39, 39, 39);
+	border-radius: 100%;
+	font-size: 40px;
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+}
+
+i:hover {
+	transform: translate(0, 0.2rem);
+	transition: 100ms;
+}
+
+.social-media:hover {
+	translate: (0, 5px);
+}
+
+.copyright {
+	width: 100%;
+	height: auto;
+	background-color: rgb(213, 213, 213);
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.6rem 1rem 0.6rem 1rem;
+}
+
+.copyright-p {
+	margin: 0;
+}
+
+.partners,
+.sos-title {
+	text-align: center;
+}
+
+.logo {
+	width: 48%;
+	height: auto;
+	margin-bottom: 1.8rem;
+}
+
+.logo-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 490px) {
+	.pricelist {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	/* footer */
+	.footer-content {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.partners,
+	.sos-title {
+		text-align: start;
+	}
+
+	.sosmed-container {
+		justify-content: start;
+	}
+
+	i {
+		padding-left: 0;
+	}
+
+	.logo-container {
+		align-items: start;
+	}
+
+	/* section4 */
+
+	.section-4-content {
+		font-size: x-small;
+	}
+
+	.section-4-button {
+		width: 50%;
+	}
+}
+/* ============================================ */
+/* logo footer */
+
+.social-media i {
+	color: black; /* Mengubah warna ikon menjadi hitam */
+	font-size: 36px; /* Mengatur ukuran ikon */
+}
+
+.sosmed-container {
+	display: flex;
+	justify-content: center; /* Mengatur konten di tengah secara horizontal */
+	align-items: center; /* Memastikan konten di tengah secara vertikal */
+	width: 100%; /* Memastikan kontainer mengambil lebar maksimal */
+}
