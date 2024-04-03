@@ -1,5 +1,8 @@
 * {
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Butler', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 
 html,
@@ -13,13 +16,23 @@ body {
 /* TITTLE SECTION */
 /* hero section */
 .hero-container {
-	height: 100vh;
-	background-image: url('images/landingPage.JPG');
-	background-size: cover;
-	background-position: center;
+	padding-top: 8%;
+	position: relative;
 	display: flex;
 	justify-content: start;
 	align-items: center;
+	height: 125vh;
+}
+
+.hero-container::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-image: url('images/landingPage.JPG');
+	filter: brightness(0.6);
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
 }
 .hero-title {
 	text-align: left;
@@ -35,38 +48,38 @@ body {
 	font-size: 5rem;
 }
 @media (max-width: 767px) {
-  .hero-title {
-    text-align: center;
-  }
-  .hero-container > .row > .hero-title > h3 {
-    font-size: 1.5rem;
-    letter-spacing: 8px;
-  }
-  .hero-container > .row > .hero-title > h1 {
-    font-size: 3rem;
-    letter-spacing: 20px;
-  }
-  .about-us > .row > .about-us-content {
-    text-align: center;
-  }
-  .about-us-container > .row > .about-us-content > .content-1 {
-    font-size: 1.5rem;
-    letter-spacing: 8px;
-  }
-  .about-us-container > .row > .about-us-content > .content-2 {
-    font-size: 3rem;
-    letter-spacing: 20px;
-  }
+	.hero-title {
+		text-align: center;
+	}
+	.hero-container > .row > .hero-title > h3 {
+		font-size: 1.5rem;
+		letter-spacing: 8px;
+	}
+	.hero-container > .row > .hero-title > h1 {
+		font-size: 3rem;
+		letter-spacing: 20px;
+	}
+	.about-us > .row > .about-us-content {
+		text-align: center;
+	}
+	.about-us-container > .row > .about-us-content > .content-1 {
+		font-size: 1.5rem;
+		letter-spacing: 8px;
+	}
+	.about-us-container > .row > .about-us-content > .content-2 {
+		font-size: 3rem;
+		letter-spacing: 20px;
+	}
 }
 /* ============================================================================= */
 
 /* about us start */
 
 .about-us-container {
-	height: 100vh;
+	height: 110vh;
 	background-image: url('images/about.JPG');
 	background-size: cover;
-	background-position: center;
+	background-position: center calc(40%);
 	display: flex;
 	justify-content: start;
 	align-items: center;
@@ -114,7 +127,7 @@ body {
 /* NAVIGASI BAR */
 
 #mainNavigation a {
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Butler', sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -139,7 +152,7 @@ a.dropdown-item:hover {
 	min-width: 12vw;
 }
 #mainNavigation {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -431,7 +444,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Butler', sans-serif;
 	padding: 3rem 1rem 4rem 1rem;
 }
 
@@ -477,7 +490,7 @@ i:hover {
 	width: 100%;
 	height: auto;
 	background-color: rgb(213, 213, 213);
-	font-family: 'Playfair Display', serif;
+	font-family: 'Butler', sans-serif;
 	font-style: normal;
 	display: flex;
 	align-items: center;
